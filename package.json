@@ -1,0 +1,16 @@
+{
+  "name": "proxy-parser_cambridge_dictionary",
+  "version": "1.0.0",
+  "description": "get only common definitions",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "author": "Andrey Trifonenko <sintez91@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "express": "^4.17.1",
+    "jsdom": "^16.2.2"
+  }
+}

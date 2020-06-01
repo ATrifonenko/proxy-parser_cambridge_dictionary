@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proxy-Parser Cambridge Dictionary</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <script>
+    function reg() {
+      window.captureEvents(Event.SUBMIT);
+      window.onsubmit = hit;
+    }
+    function hit(e) {
+      e.preventDefault();
+      window.open(`/${document.querySelector('.input_search').value}`, '_top');
+    }
+  </script>
+  <body onload="reg();">
+    <div class="wrapper">
+      <div class="content"></div>
+      <form class="search">
+        <input type="text" name="search" placeholder="Enter word" class="input_search" />
+        <input type="submit" value="Search" class="input_submit" />
+      </form>
+    </div>
+  </body>
+</html>
